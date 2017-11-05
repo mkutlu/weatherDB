@@ -17,10 +17,10 @@ import org.jsoup.select.Elements;
 public class detailedACC {
 	protected String local,region,country,day,weather;
 	
-	 public static void main(String[] args) {
+	 public static void getWeatherDetails(String url) {
 		System.out.println(getCurrentTime());
 		try {
-			Document doc = Jsoup.connect("https://www.accuweather.com/tr/tr/aliaga/318256/hourly-weather-forecast/318256").timeout(10000).validateTLSCertificates(false).get();
+			Document doc = Jsoup.connect(url).timeout(10000).validateTLSCertificates(false).get();
 			
 			//Document doc = Jsoup.connect("https://www.accuweather.com/tr/tr/cankaya/320647/hourly-weather-forecast/320647/").timeout(10000).validateTLSCertificates(false).get();
 			Elements els = doc.getElementsByClass("hourly-table overview-hourly");

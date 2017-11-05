@@ -14,4 +14,11 @@
 	<natures>
 		<nature>org.eclipse.jdt.core.javanature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>lib</name>
+			<type>2</type>
+			<location>D:/Downloads/hibernate-release-5.2.12.Final/hibernate-release-5.2.12.Final/lib</location>
+		</link>
+	</linkedResources>
 </projectDescription>
